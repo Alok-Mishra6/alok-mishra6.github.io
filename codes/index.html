@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Mishra - AI/ML Developer & Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Neural Network Background Animation -->
+    <canvas id="neuralNetwork"></canvas>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">Initializing Neural Network...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AM<span class="cursor-blink">_</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#ventures" class="nav-link">Ventures</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="name-container">
+                <h1 class="hero-name">
+                    <span class="first-name">ALOK</span>
+                    <span class="last-name">MISHRA</span>
+                </h1>
+            </div>
+            <div class="typing-container">
+                <h2 class="typing-text"></h2>
+            </div>
+            <p class="hero-description fade-in">
+                AI/ML Developer | Startup Co-Founder | Published Researcher at ECIR 2026
+            </p>
+            <div class="cta-buttons fade-in">
+                <a href="#about" class="btn btn-primary">
+                    <span>Explore My Work</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="social-links fade-in">
+                <a href="https://github.com/Alok-Mishra6" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alok-mishra-65a3a9319/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:alokajaymishra@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <div class="ai-border"></div>
+                        <img src="https://via.placeholder.com/400x400" alt="Alok Mishra">
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <p class="about-text">
+                        Hello! I'm Alok, an AI/ML Developer and Startup Co-Founder currently pursuing an integrated BS-MS 
+                        in Science at IISER Kolkata. My work bridges cutting-edge artificial intelligence research with 
+                        real-world entrepreneurial ventures.
+                    </p>
+                    <p class="about-text">
+                        I co-founded <strong>UnderWater AI</strong>, a government-funded deeptech startup developing 
+                        computer vision solutions for marine species identification. Our work is backed by MeitY Startup 
+                        Hub through the GENESIS program, with product launch targeted for 2027.
+                    </p>
+                    <p class="about-text">
+                        My research has been published at <strong>ECIR 2026</strong>, one of the premier conferences in 
+                        information retrieval. I specialize in large language models, parameter-efficient fine-tuning, 
+                        and building scalable AI systems that solve real-world challenges.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="1">0</h3>
+                            <p class="stat-label">Startup Founded</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="2">0</h3>
+                            <p class="stat-label">Publications</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="2">0</h3>
+                            <p class="stat-label">Hackathon Finals</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <p class="stat-label">% Government Funded</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrepreneurial Ventures -->
+    <section id="ventures" class="ventures section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Entrepreneurial Ventures</h2>
+            <div class="venture-card" data-aos="zoom-in">
+                <div class="venture-badge">MeitY Funded</div>
+                <div class="venture-header">
+                    <div class="venture-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div>
+                        <h3 class="venture-title">UnderWater AI</h3>
+                        <p class="venture-subtitle">Co-Founder | Jan 2025 - Present</p>
+                    </div>
+                </div>
+                <p class="venture-description">
+                    Deeptech startup incubated at RISE Foundation, IISER Kolkata, funded by MeitY Startup Hub 
+                    through the GENESIS program. Developing AI-powered software solutions to enhance underwater 
+                    image quality using deep neural networks and early fusion learning for marine species identification.
+                </p>
+                <div class="venture-tags">
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Marine AI</span>
+                    <span class="tag">Early Fusion</span>
+                </div>
+                <div class="venture-status">
+                    <div class="status-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Funded</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>DPIIT Registration (Q1 2026)</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-rocket"></i>
+                        <span>Product Shipping 2027</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Publications & Research</h2>
+            <div class="publications-grid">
+                <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pub-badge">ECIR 2026</div>
+                    <h3 class="pub-title">AgriIR: A Scalable Framework for Domain-Specific Knowledge Retrieval</h3>
+                    <p class="pub-venue">48th European Conference on Information Retrieval (IR-for-Good Track)</p>
+                    <p class="pub-details">
+                        Developed a scalable information retrieval framework for agricultural domain knowledge in 
+                        developing regions. Implemented advanced retrieval algorithms optimized for domain-specific 
+                        terminology and contextual understanding.
+                    </p>
+                    <div class="pub-stats">
+                        <span class="pub-stat">
+                            <i class="fas fa-percentage"></i>
+                            34.5% Acceptance Rate
+                        </span>
+                        <span class="pub-stat">
+                            <i class="fas fa-file-pdf"></i>
+                            Springer LNCS
+                        </span>
+                    </div>
+                    <div class="pub-tags">
+                        <span class="tag">Information Retrieval</span>
+                        <span class="tag">Agriculture AI</span>
+                        <span class="tag">Social Good</span>
+                    </div>
+                </div>
+
+                <div class="publication-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pub-badge">Research</div>
+                    <h3 class="pub-title">Hierarchical Opinion Classification using Large Language Models</h3>
+                    <p class="pub-venue">Co-authors: Shuvam Banerji Seal, Alok Mishra, and Utkarsha Ghosh</p>
+                    <p class="pub-details">
+                        Developed parameter-efficient fine-tuning approach for Gemma LLM with custom two-layer 
+                        classification head. Reformulated hierarchical labels into 8-class flat scheme with 
+                        class-weighted cross-entropy loss.
+                    </p>
+                    <div class="pub-tags">
+                        <span class="tag">LLM Fine-tuning</span>
+                        <span class="tag">PEFT</span>
+                        <span class="tag">Classification</span>
+                        <span class="tag">Gemma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Hackathons & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="flip-left">
+                    <div class="project-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="project-title">Capital India Hackathon</h3>
+                    <p class="project-role">National Finalist | 2024-2025</p>
+                    <p class="project-description">
+                        Selected as national finalist among hundreds of teams. Developed comprehensive AI solution 
+                        with end-to-end system architecture including data pipeline, ML model deployment, and UI.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">National Level</span>
+                        <span class="tag">AI Solution</span>
+                        <span class="tag">System Design</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="project-title">Inter-IISER Hackathon</h3>
+                    <p class="project-role">Finalist | 2024-2025</p>
+                    <p class="project-description">
+                        Finalist in prestigious inter-IISER competition. Led team in designing ML-driven solution 
+                        within 24-hour constraint, recognized for technical innovation and architecture.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Inter-Institute</span>
+                        <span class="tag">ML Solution</span>
+                        <span class="tag">24-Hour Sprint</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="project-title">Qiskit Fall Fest</h3>
+                    <p class="project-role">IBM Quantum Computing | 2024</p>
+                    <p class="project-description">
+                        Completed IBM's quantum computing training program. Gained hands-on experience with Qiskit 
+                        framework for quantum algorithms and circuit design.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Quantum Computing</span>
+                        <span class="tag">Qiskit</span>
+                        <span class="tag">IBM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-category-title">Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">Keras</span>
+                        <span class="skill-item">Neural Networks</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="skill-category-title">Computer Vision</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">OpenCV</span>
+                        <span class="skill-item">Image Processing</span>
+                        <span class="skill-item">Object Detection</span>
+                        <span class="skill-item">Underwater Imaging</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="skill-category-title">NLP & LLMs</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Hugging Face</span>
+                        <span class="skill-item">Gemma</span>
+                        <span class="skill-item">Qwen</span>
+                        <span class="skill-item">LLaMA</span>
+                        <span class="skill-item">PEFT</span>
+                        <span class="skill-item">LoRA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-category-title">RAG & Retrieval</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">RAG Systems</span>
+                        <span class="skill-item">FAISS</span>
+                        <span class="skill-item">Langchain</span>
+                        <span class="skill-item">Vector DBs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-category-title">Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="skill-category-title">Quantum Computing</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Qiskit</span>
+                        <span class="skill-item">Quantum Algorithms</span>
+                        <span class="skill-item">Circuit Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up">
+                Interested in collaborating, have a question, or just want to connect? Feel free to reach out!
+            </p>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:alokajaymishra@gmail.com">alokajaymishra@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+919325158188">+91 9325158188</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <h4>Institution</h4>
+                            <p>IISER Kolkata</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Alok Mishra. All Rights Reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i>, <i class="fas fa-brain"></i>, and Coffee <i class="fas fa-mug-hot"></i></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Alok-Mishra6" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alok-mishra-65a3a9319/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:alokajaymishra@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
